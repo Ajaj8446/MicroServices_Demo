@@ -24,7 +24,7 @@ public class HomeController {
 	}
 
 	@RequestMapping("/getGallery")
-	public List<String> getGallery(@PathVariable final int id) {
+	public List<String> getGallery() {
 
 		// get list of available images
 		List<String> images = restTemplate.getForObject("http://image-service/images/", List.class);
