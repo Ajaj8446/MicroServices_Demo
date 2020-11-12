@@ -42,5 +42,6 @@ class DBController {
 	public void deleteUser(@RequestBody AppUser appUser) {
 		repository.deleteById(appUser.getId());
 	}
-
+	
+	
 }
